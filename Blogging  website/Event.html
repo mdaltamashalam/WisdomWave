@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topics wisdomwave</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Optional: Adjust the logo height for smaller screens */
+        @media (max-width: 576px) {
+            .navbar-brand img {
+                height: 30px;
+            }
+        }
+    </style>
+    <script src="index.js"></script>
+</head>
+<body>
+
+    
+<!-- -------------------------------------------    Navbar -------------------------------------------------------------------- -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <!-- Updated Logo with Text -->
+            <a class="navbar-brand" href="Home.html" style="font-family: 'Poppins', sans-serif; font-size: 1.5rem; font-weight: bold; color: #FFFFFF;">
+                Wisdom Wave
+            </a>
+    
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <!-- Home Link -->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Home.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+    
+                    <!-- Topics Link -->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Topics.html">Topics<span class="sr-only">(current)</span></a>
+                    </li>
+    
+                    <!-- Technologies Link (Without Dropdown) -->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Technologies.html">Technologies<span class="sr-only">(current)</span></a>
+                    </li>
+    
+                    <!-- Event Link -->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Event.html">Event <span class="sr-only">(current)</span></a>
+                    </li>
+    
+                    <!-- Analysis Link -->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Analytics.html">Analysis <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+
+
+
+<!-- -------------------------------------     Events in the Cities-----------------------------------------------------------  -->
+<!-- Events Section -->
+<div class="events-items">
+    <h1>Events in the Cities</h1>
+    <p>Discover exciting events happening in your city. Choose the event you want to attend and book your show!</p>
+    <div class="event-grid">
+
+        <!-- Data Science Event -->
+        <div class="event-card">
+            <img src="/Images/Data SC.jpg" alt="Data Science Event">
+            <div class="event-content">
+                <h2 class="event-title">Data Science Summit</h2>
+                <p class="event-description">Join industry experts to explore the latest in data science, machine learning, and AI.</p>
+                <button class="book-btn">Book the Show
+                    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Web Development Event -->
+        <div class="event-card">
+            <img src="/Images/webdev1.jpeg" alt="Web Development Event">
+            <div class="event-content">
+                <h2 class="event-title">Web Dev Con</h2>
+                <p class="event-description">Master modern web development techniques with hands-on workshops and live demos.</p>
+                <button class="book-btn">Book the Show
+                    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Cyber Security Event -->
+        <div class="event-card">
+            <img src="/Images/Cybersecurity.jpeg" alt="Cyber Security Event">
+            <div class="event-content">
+                <h2 class="event-title">Cyber Security Workshop</h2>
+                <p class="event-description">Protect your digital assets and stay ahead of cyber threats with this hands-on workshop.</p>
+                <button class="book-btn">Book the Show
+                    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- AI Conference -->
+        <div class="event-card">
+            <img src="/Images/AI Confrence.jpg" alt="AI Conference">
+            <div class="event-content">
+                <h2 class="event-title">AI Conference 2024</h2>
+                <p class="event-description">Explore cutting-edge advancements in AI with keynote speakers and live demos.</p>
+                <button class="book-btn">Book the Show
+                    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Blockchain Symposium -->
+        <div class="event-card">
+            <img src="/Images/Blockchain.jpg" alt="Blockchain Symposium">
+            <div class="event-content">
+                <h2 class="event-title">Blockchain Symposium</h2>
+                <p class="event-description">Dive into the world of blockchain technology and learn about decentralized systems.</p>
+                <button class="book-btn">Book the Show
+                    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Cloud Computing Expo -->
+        <div class="event-card">
+            <img src="/Images/cloud computing.jpg" alt="Cloud Computing Expo">
+            <div class="event-content">
+                <h2 class="event-title">Cloud Computing Expo</h2>
+                <p class="event-description">Discover the latest in cloud technology and infrastructure solutions.</p>
+                <button class="book-btn">Book the Show
+                    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Internet of Things Meetup -->
+        <div class="event-card">
+            <img src="/Images/CIOT.jpg" alt="IoT Meetup">
+            <div class="event-content">
+                <h2 class="event-title">IoT Meetup</h2>
+                <p class="event-description">Connect with IoT enthusiasts and developers to discuss the future of connected devices.</p>
+                <button class="book-btn">Book the Show
+                    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Robotics Exhibition -->
+        <div class="event-card">
+            <img src="/Images/CRobot.jpg" alt="Robotics Exhibition">
+            <div class="event-content">
+                <h2 class="event-title">Robotics Exhibition</h2>
+                <p class="event-description">Witness the latest in robotics innovation, from AI-powered robots to automation solutions.</p>
+                <button class="book-btn">Book the Show
+                    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Digital Marketing Forum -->
+        <div class="event-card">
+            <img src="/Images/Digital marketing.jpg" alt="Digital Marketing Forum">
+            <div class="event-content">
+                <h2 class="event-title">Digital Marketing Forum</h2>
+                <p class="event-description">Learn the latest strategies in digital marketing from industry experts and thought leaders.</p>
+                <button class="book-btn">Book the Show
+                    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+<!-- ------------------------------------------------Bollywood Blog Shows    --------------------------------------------------  -->
+<!-- Bollywood Shows Section -->
+<div class="bollywood-shows-items">
+    <h1>Bollywood Blog Shows</h1>
+    <p>Catch the latest insights, reviews, and updates on Bollywood movies. Book your favorite shows now!</p>
+    <div class="bollywood-grid">
+
+        <!-- Bollywood Show 1 -->
+        <div class="bollywood-card">
+            <img src="/Images/Bollowood Movies.jpg" alt="Bollywood Show 1">
+            <div class="bollywood-content">
+                <h2 class="bollywood-title">Bollywood Blockbusters</h2>
+                <p class="bollywood-description">"Bollywood blockbusters captivate audiences worldwide with thrilling stories, vibrant dance sequences, and unforgettable characters. From epic romances to action-packed dramas, these define Indian cinema, leaving an enduring impact on pop culture." </p>
+                <button class="book-btn">Book the Show
+                    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Bollywood Show 2 -->
+        <div class="bollywood-card">
+            <img src="/Images/Behind the scene.jpg" alt="Bollywood Show 2">
+            <div class="bollywood-content">
+                <h2 class="bollywood-title">Bollywood Behind the Scenes</h2>
+                <p class="bollywood-description">"Bollywood's magic extends beyond the screen! Discover captivating moments, candid shots, and hard work behind iconic scenes—where actors, directors, and crew pour passion into creating cinematic wonders. Lights, camera, action!"</p>
+                <button class="book-btn">Book the Show
+                    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Bollywood Show 3 -->
+        <div class="bollywood-card">
+            <img src="/Images/Bollywood classic.jpg" alt="Bollywood Show 3">
+            <div class="bollywood-content">
+                <h2 class="bollywood-title">Bollywood Classics Revisited</h2>
+                <p class="bollywood-description">"Rediscover the charm of Bollywood classics—films that set benchmarks in storytelling, music, and style. These timeless gems continue to inspire generations, reminding us of cinema's golden era and its lasting legacy."</p>
+                <button class="book-btn">Book the Show
+                    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- --------------------------------------- Footer ------------------------------------------------------------------>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section company">
+            <h3>Company</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="footer-section for-customers">
+            <h3>For Customers</h3>
+            <ul>
+                <li><a href="#"><img src="/Images/customer-service.png" alt="Support Icon" /> Support</a></li>
+                <li><a href="#"><img src="/Images/faq.png" alt="FAQ Icon" /> FAQ</a></li>
+            </ul>
+        </div>
+        <div class="footer-section for-partners">
+            <h3>For Partners</h3>
+            <ul>
+                <li><a href="#"><img src="/Images/deal.png" alt="Partner Icon" /> Partnership</a></li>
+                <li><a href="#"><img src="/Images/collaboration.png" alt="Collaborate Icon" /> Collaborate</a></li>
+            </ul>
+        </div>
+        <div class="footer-section social-links">
+            <h3>Follow Us</h3>
+            <ul>
+                <li><a href="#"><img src="/Images/Linkedin logo.png" alt="LinkedIn Icon" ></a></li>
+                <li><a href="#"><img src="/Images/instagram.png" alt="Instagram Icon" width="30" height="30"></a></li>
+                <li><a href="#"><img src="/Images/Twitter.png" alt="Twitter Icon" width="30" height="30"></a></li>
+            </ul>
+        </div>
+        
+        
+        
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Wisdom Wave. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- Bootstrap JS and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Development of Society</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* ---------------------------------------------Development---------------------------------------- */
+/* Society - Hero Section */
+.society {
+    
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    border-radius: 20px;
+}
+
+.society .content {
+    max-width: 100%;
+    height: 100px;
+}
+
+.society h1 {
+    color: #ffffff;
+    font-size: 3em;
+    margin-bottom: 15px;
+    animation: fadeInDown 1s ease;
+}
+
+.society p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    animation: fadeInUp 1.2s ease;
+    color: #ffffff;
+}
+
+.society .social_work {
+    width: 400px;
+    height: 180px;
+    padding: 12px 24px;
+    font-size: 1em;
+    border: none;
+    background-color: #000000;
+    color: #333;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.society .social_work:hover {
+    background-color: #2d2d2d;
+}
+
+/* Ethics - Navigation Tabs */
+.ethics {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.social_work {
+    padding: 10px 20px;
+    color: #4e4376;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #e3e3e3;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.social_work.active {
+    background-color: #2b5876;
+    color: #fff;
+}
+
+.social_work:hover {
+    
+    color:#ffffff;
+    background-color: #2b5876;
+}
+
+/* Ethics - Articles Section */
+.article-section {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.article-section .social_work {
+    background-color: #fff;
+    width: 30%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.article-section .social_work:hover {
+    transform: translateY(-10px);
+}
+
+.article-section img {
+    width: 100%;
+    height: auto;
+}
+
+.text-content {
+    padding: 15px;
+}
+
+.text-content h2 {
+    font-size: 1.2em;
+    margin-bottom: 8px;
+    color: #2b5876;
+}
+
+.text-content p {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.date {
+    display: block;
+    font-size: 0.8em;
+    color: #666;
+}
+
+
+/* development */
+.development_progress {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.development_progress:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.development_progress-header {
+    background-color: #4e73df;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 15px;
+    text-align: center;
+}
+
+.development_progress-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.development_progress-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.development_progress-text {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.development_progress-btn {
+    background-color: #4e73df;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.development_progress-btn:hover {
+    background-color: #375ac8;
+}
+
+.development_progress-footer {
+    background-color: #f4f7f6;
+    padding: 15px;
+    font-size: 0.9em;
+    color: #999;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #e0e0e0;
+}
+
+.development_progress-footer span {
+    color: #666;
+}
+
+
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .article-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .article-section .social_work {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .stats {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .society h1 {
+        font-size: 2em;
+    }
+    .ethics .social_work {
+        font-size: 0.9em;
+        padding: 8px 12px;
+    }
+}
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="society">
+        <div class="content">
+            <h1>Development of Society</h1>
+            <p>Insights and actions shaping our future, improving quality of life, and building stronger communities.</p>
+            
+        </div>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <nav class="ethics">
+        <a href="#" class="social_work active">Health</a>
+        <a href="#" class="social_work">Education</a>
+        <a href="#" class="social_work">Environment</a>
+        <a href="#" class="social_work">Economy</a>
+        <a href="#" class="social_work">Technology</a>
+        <a href="#" class="social_work">Trade | Stocks BSE NSE</a>
+        <a href="#" class="social_work">Politics</a>
+    </nav>
+
+    <!-- Featured Articles Section -->
+    <section class="ethics article-section">
+        <article class="social_work">
+            <img src="/Images/Health.jpg" alt="Health and Community">
+            <div class="text-content">
+                <h2>Understanding Community Health</h2>
+                <p>Discover the impacts of community health programs on urban areas.</p>
+                <span class="date">3 Oct 2024</span>
+            </div>
+        </article>
+        <article class="social_work">
+            <img src="/Images/Educationnn.jpg" alt="Education Reform">
+            <div class="text-content">
+                <h2>Impact of Education Reforms</h2>
+                <p>Analyzing the influence of new education policies on society.</p>
+                <span class="date">26 Sept 2024</span>
+            </div>
+        </article>
+        <article class="social_work">
+            <img src="/Images/Urban.jpg" alt="Sustainability in Development">
+            <div class="text-content">
+                <h2>Sustainability in Urban Development</h2>
+                <p>Green building practices for sustainable cities.</p>
+                <span class="date">19 Sept 2024</span>
+            </div>
+        </article>
+    </section>
+
+
+    <div class="development_progress">
+        <div class="development_progress-header">
+            Development of Society
+        </div>
+        <div class="development_progress-body">
+          <h5 class="development_progress-title">Understanding Development Progress</h5>
+          <p class="development_progress-text">
+              Development is an ongoing process that shapes and defines society, technology, and individual growth. It encapsulates the efforts to advance social, economic, and technological realms, driving the world toward a more sustainable and innovative future. Human development focuses on improving the quality of life through education, healthcare, and access to opportunities. In the technological domain, progress is marked by breakthroughs that enhance connectivity, automation, and problem-solving capabilities. Economic development fosters wealth generation, reduces poverty, and supports equitable resource distribution. Every aspect of development is interconnected, creating a ripple effect that benefits communities, nations, and global society. By investing in development, we lay the foundation for future generations to live in a world that is more efficient, connected, and inclusive. Each step in development is crucial for creating a balanced and forward-moving society that can face challenges while continually adapting to change.
+          </p>
+          <a href="#" class="development_progress-btn">Learn More</a>
+        </div>
+        <div class="development_progress-footer">
+          <span>Published by John Doe</span>
+          <span>• 2 days ago</span>
+        </div>
+      </div>
+      <br>
+
+
+      <div class="development_progress">
+        <div class="development_progress-header">
+            Health
+        </div>
+        <div class="development_progress-body">
+            <h5 class="development_progress-title">Advancements in Health</h5>
+            <p class="development_progress-text">
+                Health is a foundational pillar of society, crucial for economic growth and overall well-being. Advances in healthcare have enabled longer life expectancy, enhanced quality of life, and reduced the impact of diseases. Modern medicine, biotechnology, and preventive care have revolutionized our ability to manage health crises. Public health initiatives and increased awareness contribute to better lifestyles, while technology plays a major role in diagnostics and treatment. The continuous development in health research is essential to address challenges such as aging populations, chronic diseases, and healthcare accessibility. Together, these efforts create a healthier and more resilient society.
+            </p>
+            <a href="#" class="development_progress-btn">Learn More</a>
+        </div>
+        <div class="development_progress-footer">
+            <span>Published by Jane Smith</span>
+            <span>• 3 days ago</span>
+        </div>
+    </div>
+    <br>
+    
+    
+    <div class="development_progress">
+        <div class="development_progress-header">
+            Education
+        </div>
+        <div class="development_progress-body">
+            <h5 class="development_progress-title">The Power of Education</h5>
+            <p class="development_progress-text">
+                Education is a key driver of societal progress, empowering individuals with the knowledge and skills needed to thrive. From early childhood education to advanced learning, access to quality education promotes equal opportunities and social mobility. Technology has transformed education by making resources widely accessible, fostering self-learning, and encouraging innovation. Continuous investment in education is essential for economic development and social cohesion, helping to reduce poverty, promote gender equality, and drive sustainable growth. Education shapes future generations, allowing them to face global challenges with confidence and creativity.
+            </p>
+            <a href="#" class="development_progress-btn">Learn More</a>
+        </div>
+        <div class="development_progress-footer">
+            <span>Published by Alex Green</span>
+            <span>• 5 days ago</span>
+        </div>
+    </div>
+    <br>
+    
+    <div class="development_progress">
+        <div class="development_progress-header">
+            Environment
+        </div>
+        <div class="development_progress-body">
+            <h5 class="development_progress-title">Sustainable Environmental Practices</h5>
+            <p class="development_progress-text">
+                Environmental development focuses on creating sustainable practices that protect ecosystems and ensure resource availability for future generations. Efforts include reducing carbon emissions, conserving biodiversity, and managing waste. By adopting renewable energy sources, enforcing environmental regulations, and fostering a circular economy, society works to mitigate the impacts of climate change. Community involvement and educational programs are crucial for promoting environmental awareness. Sustainable development aims to balance economic growth with ecological stewardship, creating a harmonious relationship between nature and society.
+            </p>
+            <a href="#" class="development_progress-btn">Learn More</a>
+        </div>
+        <div class="development_progress-footer">
+            <span>Published by Sarah Lee</span>
+            <span>• 7 days ago</span>
+        </div>
+    </div>
+    <br>
+    
+    <div class="development_progress">
+        <div class="development_progress-header">
+            Economy
+        </div>
+        <div class="development_progress-body">
+            <h5 class="development_progress-title">Economic Growth and Stability</h5>
+            <p class="development_progress-text">
+                Economic development is vital for creating jobs, raising living standards, and reducing poverty. It involves sustainable practices that generate wealth, foster innovation, and improve infrastructure. From industrial advancements to digital transformation, economies are evolving to meet global demands. Fiscal policies, trade agreements, and investments play a significant role in shaping economic resilience. A stable economy allows for social programs and public services, benefiting citizens and providing a safety net. Economic growth, when managed inclusively, leads to a more prosperous society where resources are available to all.
+            </p>
+            <a href="#" class="development_progress-btn">Learn More</a>
+        </div>
+        <div class="development_progress-footer">
+            <span>Published by Michael Brown</span>
+            <span>• 10 days ago</span>
+        </div>
+    </div>
+    <br>
+    
+    <div class="development_progress">
+        <div class="development_progress-header">
+            Technology
+        </div>
+        <div class="development_progress-body">
+            <h5 class="development_progress-title">Advancing Through Technology</h5>
+            <p class="development_progress-text">
+                Technology is at the heart of modern development, transforming industries and enhancing daily life. From artificial intelligence to the Internet of Things, advancements in technology improve efficiency, communication, and convenience. Innovations in tech have changed healthcare, education, and commerce, making them more accessible and adaptable. Society's reliance on technology emphasizes the need for cybersecurity, digital literacy, and ethical considerations. Technological progress drives economic growth, enables global connectivity, and facilitates solutions to complex challenges, paving the way for a more connected and automated future.
+            </p>
+            <a href="#" class="development_progress-btn">Learn More</a>
+        </div>
+        <div class="development_progress-footer">
+            <span>Published by Emily White</span>
+            <span>• 12 days ago</span>
+        </div>
+    </div>
+    <br>
+    
+    <div class="development_progress">
+        <div class="development_progress-header">
+            Trade | Stocks BSE NSE
+        </div>
+        <div class="development_progress-body">
+            <h5 class="development_progress-title">Insights into Trade and Stocks</h5>
+            <p class="development_progress-text">
+                Trade is an essential component of the global economy, fostering economic growth and connecting markets. Stock exchanges like BSE and NSE play a pivotal role in capital formation, allowing businesses to expand and innovate. Stock trading provides opportunities for wealth creation while supporting corporate expansion. However, it requires sound knowledge of market trends, risk management, and economic indicators. By enabling investments, trade and stocks contribute to wealth distribution and economic stability. Market regulations and policies are crucial for maintaining transparency, protecting investors, and ensuring fair trade.
+            </p>
+            <a href="#" class="development_progress-btn">Learn More</a>
+        </div>
+        <div class="development_progress-footer">
+            <span>Published by Oliver Black</span>
+            <span>• 15 days ago</span>
+        </div>
+    </div>
+    <br>
+    
+    <div class="development_progress">
+        <div class="development_progress-header">
+            Politics
+        </div>
+        <div class="development_progress-body">
+            <h5 class="development_progress-title">Understanding Political Development</h5>
+            <p class="development_progress-text">
+                Politics shapes societies by influencing policies, governance, and rights. Political development is vital for stability, security, and justice. Through representation and law-making, politics impacts every aspect of life, from economic policies to social rights. Effective governance requires transparency, accountability, and public engagement. As political landscapes evolve, they address emerging issues like climate change, digital privacy, and global relations. A well-structured political system empowers citizens, safeguards freedoms, and promotes equality. Political progress builds a resilient society, adapting to change and advocating for the collective good.
+            </p>
+            <a href="#" class="development_progress-btn">Learn More</a>
+        </div>
+        <div class="development_progress-footer">
+            <span>Published by Sophia Gray</span>
+            <span>• 20 days ago</span>
+        </div>
+    </div>
+
+    
+</body>
+</html>
